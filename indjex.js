@@ -28,7 +28,7 @@ module.exports.setAccessKey = async ( key ) => {
 module.exports.getGeoData = async ( address ) => {
 
     if (access_key) {
-        const response = await got(url,{access_key: access_key})
+        const response = await got(`${url + address}`,{access_key: access_key})
         let ip = response.body
         return ip
     } else {

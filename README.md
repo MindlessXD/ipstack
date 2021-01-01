@@ -1,21 +1,22 @@
 ## IPIFY
-Module For Easy Streamlined Access Of The IPIFY IPv4 Service
+Module For Easy Streamlined Access Of The IpStack GeoIP Service
 
 ### Install
 ```
-npm i @mindlessxd/ipify
+npm i @mindlessxd/ipstack
 ```
 
 ### Examples
 
 #### IPv4
 ```javascript
-const ipify = require('@mindlessxd/ipify');
+const ipstack = require('@mindlessxd/ipstack');
+ipstack.setAccessKey("EXAMPLE_KEY")
 
 (async () => {
     try {
-        let ip = await ipify()
-        console.log(ip)
+        let geoData = await ipstack.getGeoData("EXAMPLE_ADDRESS")
+        console.log(geoData)
     } catch (error) {
         console.log(error)
     }
