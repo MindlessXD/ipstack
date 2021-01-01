@@ -1,0 +1,27 @@
+{
+  "name": "@mindlessxd/ipstack",
+  "version": "1.0.0",
+  "description": "Module For Easy Streamlined Access Of The IpStack GeoIP Service",
+  "main": "index.js",
+  "scripts": {
+    "clean": "RMDIR /Q/S .\\node_modules"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MindlessXD/ipstack.git"
+  },
+  "keywords": [
+    "geo",
+    "geoip",
+    "location"
+  ],
+  "author": "Mindless",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MindlessXD/ipstack/issues"
+  },
+  "homepage": "https://github.com/MindlessXD/ipstack#readme",
+  "dependencies": {
+    "got": "^11.8.1"
+  }
+}
