@@ -10,7 +10,6 @@ let access_key
  * @param {string} key - Access Key
  */
 module.exports.setAccessKey = async ( key ) => {
-
     if (key) {
         access_key = key
     } else {
@@ -26,9 +25,8 @@ module.exports.setAccessKey = async ( key ) => {
  * @param {string} address - IP Address For Geo Data
  */
 module.exports.getGeoData = async ( address ) => {
-
     if (access_key) {
-        const response = await got(`${url + address}`,{access_key: access_key})
+        const response = await got(`${base_url + address + "?access_key=" + access_key}`)
         let ip = response.body
         return ip
     } else {
