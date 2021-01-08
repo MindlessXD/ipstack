@@ -1,6 +1,6 @@
 {
   "name": "@mindlessxd/ipstack",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Module For Easy Streamlined Access Of The IpStack GeoIP Service",
   "main": "index.js",
   "scripts": {
