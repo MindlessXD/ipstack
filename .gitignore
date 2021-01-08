@@ -1,1 +1,4 @@
 .git
+.gitattributes
+build
+node_modules
